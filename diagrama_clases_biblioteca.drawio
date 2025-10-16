@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
+  <diagram id="lU8Ldqrp5ugLvUL-4CaK" name="Página-1">
+    <mxGraphModel dx="1666" dy="831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Biblioteca" value="&lt;b&gt;Biblioteca&lt;/b&gt;&lt;hr&gt;- nombre&lt;br&gt;- ubicación&lt;br&gt;- secciones: List&lt;Sección&gt;&lt;hr&gt;+ agregarSeccion()&lt;br&gt;+ mostrarLibrosDisponibles()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Sección" value="&lt;b&gt;Sección&lt;/b&gt;&lt;hr&gt;- nombre&lt;br&gt;- capacidad&lt;br&gt;- libros: List&lt;Libro&gt;&lt;hr&gt;+ agregarLibro()&lt;br&gt;+ eliminarLibro()&lt;br&gt;+ listarLibros()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Libro" value="&lt;b&gt;Libro&lt;/b&gt;&lt;hr&gt;- ISBN&lt;br&gt;- título&lt;br&gt;- temática&lt;br&gt;- autor&lt;br&gt;- disponible: boolean&lt;hr&gt;+ prestarLibro()&lt;br&gt;+ devolverLibro()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="40" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Persona" value="&lt;b&gt;Persona&lt;/b&gt;&lt;hr&gt;- DNI&lt;br&gt;- nombre&lt;br&gt;- contacto&lt;hr&gt;+ registrarDatos()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Socio" value="&lt;b&gt;Socio&lt;/b&gt;&lt;hr&gt;- numeroSocio&lt;hr&gt;+ consultarPrestamos()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="230" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo" value="&lt;b&gt;Prestamo&lt;/b&gt;&lt;hr&gt;- libro: Libro&lt;br&gt;- persona: Persona&lt;br&gt;- fechaPrestamo&lt;br&gt;- fechaDevolucion&lt;hr&gt;+ calcularFechaLimite()&lt;br&gt;+ registrarDevolucion()" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="230" width="170" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
